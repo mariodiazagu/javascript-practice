@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Tape</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Focus Tape</h1>     
+
+        <form id="formCancion">
+            <label for="nombreCancion">Canción:</label>
+            <input
+                id="nombreCancion"
+                type="text"
+                placeholder="Escribe una canción"
+            >
+
+            <label for="nombreArtista">Artista o grupo:</label>
+            <input
+                id="nombreArtista"
+                type="text"
+                placeholder="Escribe el artista o grupo"
+            >
+
+            <button type="submit">Añadir</button>
+        </form>
+
+        <p id="mensaje"></p>
+        <p id="contador" class="oculto"></p>
+
+        <!-- BUSCADOR DE CANCIONES -->
+        <div id="buscador">
+            <label for="buscarCancion">Buscar en la playlist:</label>
+            <input id="buscarCancion" type="search" placeholder="Escribe para buscar">
+        </div>
+
+        <p id="mensajeBusqueda" class="oculto">No hay canciones con tu búsqueda.</p>
+
+        <!-- LISTA DE CANCIONES -->
+        <ul id="listaCanciones"></ul>
+
+        <p id="listaVacia">Tu Focus Tape está vacía.</p>
+
+        <button id="vaciarPlaylist" type="button">
+            Vaciar playlist
+        </button>
+    </main>
+
+    <div id="modalVaciar" class="oculto">
+        <div class="tarjeta-modal">
+            <h2>¿Vaciar Focus Tape?</h2>
+            <p>Esta acción eliminará todas las canciones de la playlist.</p>
+            <p>Esta acción no se puede revertir.</p>
+
+            <button id="cancelarVaciado" type="button">
+                Cancelar
+            </button>
+
+            <button id="confirmarVaciado" type="button">
+                Vaciar playlist
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
