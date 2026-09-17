@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail archive</title>
+    <link href="https://pixelsafari.neocities.org/favicon/food/drink/cocktail6.gif" rel="icon">
+    <style>
+        body {
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cocktail archive</h1>
+
+    <div id="cocktailContainer">
+
+    </div>
+    <div id="buttonSpace">
+        <button id="addButton">Add cocktail</button>
+    </div>
+    <dialog id="addCocktailModal">
+        <form id="addCocktailForm">
+            <button id="closeModal">X</button>
+            <h2>ADD NEW COCKTAIL</h2>
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <input id="basetypeInput" placeholder="Base" required>
+            <button id="addCocktailButton">Add</button>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
